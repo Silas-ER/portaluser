@@ -1,16 +1,13 @@
-import './src/App.css';
-import head_login from './img/head_login.png'; 
+import './App.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
-  return (
-    <section class="login">
-      <section class="login-img">
-        <img src={head_login} alt='logo portal'></img>
-      </section>
-      <section class="login-form">
-        <form></form>
-      </section>
-    </section>
+  return (      
+    <body>
+      <Header></Header>
+      <Footer></Footer>
+    </body>
   );
 }
 
