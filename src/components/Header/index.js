@@ -1,20 +1,22 @@
-import './estilo.css';
 import logo from '../../img/logo.png';
+import styled from 'styled-components';
+import Nav from '../HeaderNav';
 
-const navoptions = ['Home','Suporte','Relatórios'];
+
+const HeaderGeral = styled.header`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #03D7FD;
+`
 
 function Header (){
     return(
-        <header className='header-geral'>
-            <img src={logo} alt='logo' width={250}></img>  
-            <nav>
-                <ul className='nav-geral'>
-                    {navoptions.map((options) => (
-                        <li className='nav-itens'>{options}</li>
-                    ))}
-                </ul>
-            </nav>
-        </header>
+        <HeaderGeral>
+            <img src={logo} alt='logo' width={250}/> 
+            <Nav/>
+        </HeaderGeral>
     );
 }
 
