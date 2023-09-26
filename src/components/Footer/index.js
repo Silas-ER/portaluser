@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const Rodape = styled.footer`
+    font-size: 12px;
     position: fixed;
     background-color: #F0BCB1;
-    padding: 10px; 
     bottom: 0; 
     left: 0; 
     width: 100%;
@@ -13,7 +13,7 @@ const Rodape = styled.footer`
 function Footer (){
     return(
         <Rodape>
-            <p>Produzido pelo departamento de TI - Produmar &#169;</p>
+            <p>Produzido pelo departamento de TI - <a href="https://produmar.ind.br/" target='blank'>Produmar</a> &#169;</p>
         </Rodape>
     );
 }
