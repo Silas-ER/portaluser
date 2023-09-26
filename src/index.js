@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createGlobalStyle } from 'styled-components';
-import main1 from './img/main1.jpg';
+import main3 from './img/main3.jpg';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url({main1});
+    background-image: url(${main3});
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
