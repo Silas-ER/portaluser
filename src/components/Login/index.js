@@ -4,13 +4,17 @@ const SessaoFormulario = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-itens: center;
+  align-items: center;
+  height: 100%; 
 `
 
 const FormularioLogin = styled.form`
+  border: 5px solid black;
+  border-radius: 8px;
   margin-top: 10%;
   padding: 5px;
-  width: 15%;
+  width: 90%;
+  max-width: 400px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -34,7 +38,7 @@ function LoginForm() {
   return (
     <SessaoFormulario>
       <FormularioLogin>
-        <h1>Entrar</h1>
+        <h1>Entrar no sistema</h1>
         <p>
           <label htmlFor="username">Login:</label>
           <br/>
@@ -56,7 +60,7 @@ function LoginForm() {
           />
         </p>
         <p>
-          
+          <button id="meuBotao" class="botao-personalizado" onclick="alert('Botão clicado!')">Entrar</button>
         </p>
       </FormularioLogin>
     </SessaoFormulario>

@@ -7,7 +7,9 @@ import main3 from './img/main3.jpg';
 
 const GlobalStyle = createGlobalStyle`
   body {
+    height: 100%;
     margin: 0;
+    padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
